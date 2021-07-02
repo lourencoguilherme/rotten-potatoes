@@ -26,8 +26,12 @@ kubectl apply -f k8s/mongodb/service.yaml
 kubectl get services
 kubectl get all
 
-6 - Criar o deployment
+6 - Criar o deployment da aplicação web
 kubectl apply -f k8s/web/deployment.yaml
+kubectl get pods
+
+7 - Criar o service de aplicação web
+kubectl apply -f k8s/web/service.yaml
 kubectl get pods
 
 ````
