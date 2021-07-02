@@ -26,11 +26,8 @@ kubectl apply -f k8s/mongodb/service.yaml
 kubectl get services
 kubectl get all
 
-docker image ls
-docker login
-docker tag gu1lh3rm/totten-potatoes:v1 gu1lh3rm/totten-potatoes:latest
-
-kubectl apply -f k8s/mongodb/deployment.yaml
-kubectl apply -f k8s/mongodb/service.yaml
+6 - Criar o deployment
+kubectl apply -f k8s/web/deployment.yaml
+kubectl get pods
 
 ````
