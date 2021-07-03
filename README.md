@@ -34,4 +34,13 @@ kubectl get deployments
 kubectl apply -f k8s/web/service.yaml
 kubectl get services
 
+8 - aplicação web sobe em
+http://localhost:8080/
+http://localhost:8080/host -- lista pods
+
+9 - ecalar pods de forma rapida
+kubectl scale deployment movies --replicas 10
+
 ````
+
+kubectl delete all --all --all-namespaces
