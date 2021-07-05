@@ -37,6 +37,6 @@ jobs:
           push: true
           tags: |
             gu1lh3rm/rotten-potatoes:latest
-            gu1lh3rm/rotten-potatoes:${{ github.run_number }}
+            gu1lh3rm/rotten-potatoes:v${{ github.run_number }}
           
 
