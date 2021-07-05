@@ -38,9 +38,21 @@ kubectl get services
 http://localhost:8080/
 http://localhost:8080/host -- lista pods
 
-9 - ecalar pods de forma rapida
+9 - escalar pods de forma rapida
 kubectl scale deployment movies --replicas 10
+
+kubectl delete all --all --all-namespaces
 
 ````
 
-kubectl delete all --all --all-namespaces
+
+###Build git CI/CD
+````
+
+doctl kubernetes cluster kubeconfig save 741ca32d-1944-4b94-bac1-d6860493dc9f
+
+cd ~/.kube && kubectl --kubeconfig="k8s-aula-kubeconfig.yaml" get nodes
+
+cp k8s-aula-kubeconfig.yaml ~/.kube/config
+
+````
