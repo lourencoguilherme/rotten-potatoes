@@ -49,10 +49,16 @@ kubectl delete all --all --all-namespaces
 ###Build git CI/CD
 ````
 
+1 - publicar imagem no  https://www.digitalocean.com/
 doctl kubernetes cluster kubeconfig save 741ca32d-1944-4b94-bac1-d6860493dc9f
 
 cd ~/.kube && kubectl --kubeconfig="k8s-aula-kubeconfig.yaml" get nodes
 
 cp k8s-aula-kubeconfig.yaml ~/.kube/config
+
+2 - listar o ip do serviço gerado
+
+kubectl get services
+
 
 ````
